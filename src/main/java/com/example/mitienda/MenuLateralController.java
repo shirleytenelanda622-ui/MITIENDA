@@ -69,7 +69,7 @@ public class MenuLateralController implements Initializable{
     @FXML
     private TextField txtBuscar;
     @FXML
-    private TableColumn<Producto, String> coEstado; // Asegúrate de especificar <Producto, String>
+    private TableColumn<Producto, String> coEstado;
 
 
     @FXML
@@ -203,7 +203,6 @@ public class MenuLateralController implements Initializable{
             }
         });
 
-        // 3. ENLAZAR EL RESTO DE COLUMNAS CON EL MODELO PRODUCTO
         coCodigo.setCellValueFactory(new PropertyValueFactory<>("codigo"));
         coNombre.setCellValueFactory(new PropertyValueFactory<>("nombre"));
         coCategoria.setCellValueFactory(new PropertyValueFactory<>("categoria"));
@@ -212,7 +211,6 @@ public class MenuLateralController implements Initializable{
 
         tablaProductos.setItems(listaProductos);
 
-        // 4. LISTENER PARA SELECCIONAR FILAS CON UN CLIC DIRECTO
         tablaProductos.getSelectionModel()
                 .selectedItemProperty()
                 .addListener((obs, anterior, seleccionado) -> {
