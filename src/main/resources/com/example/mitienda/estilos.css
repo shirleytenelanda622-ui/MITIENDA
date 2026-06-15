@@ -1,0 +1,37 @@
+.boton-lateral {
+    -fx-background-color: #154260;
+    -fx-text-fill: #fafafa;
+
+    -fx-alignment: center-left;
+    -fx-cursor: hand;
+    -fx-background-radius: 0;
+}
+
+.boton-lateral:hover {
+    -fx-background-color: #1c567c;
+}
+.columna-izquierda .table-cell{
+    -fx-aligment: CENTER-LEFT;
+}
+
+/* 1. CAMBIAR EL FONDO DE LA TABLA (El área gris de abajo) */
+.table-view {
+    -fx-background-color: #FFFFFF; /* Volvemos el fondo completamente blanco */
+    -fx-border-color: #E0E0E0;      /* Un borde gris claro muy fino alrededor */
+    -fx-border-radius: 4;
+}
+
+/* 2. PERSONALIZAR LAS FILAS DE DATOS (Cuando aparezcan los productos) */
+.table-view .table-row-cell {
+    -fx-background-color: #FFFFFF; /* Filas blancas */
+    -fx-border-color: transparent transparent #F2F4F4 transparent; /* Línea divisoria muy suave entre filas */
+}
+
+
+/* 3. EFECTO AL PASAR EL RATÓN (Hover) SOBRE UNA FILA */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #EBF5FB; /* Se tiñe de un azul celeste muy claro */
+    -fx-cursor: hand;
+}
+
+
